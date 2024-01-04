@@ -1,0 +1,6 @@
+@layer layout.grid, layout.layout;
+
+@import url('../vendors/bootstrap-grid.rtl.css') layer(layout.grid);
+
+@layer layout{
+}

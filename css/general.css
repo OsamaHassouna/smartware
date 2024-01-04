@@ -1,0 +1,70 @@
+/* layers order from lowest to highest priority */
+@layer reset, general, components, utilities;
+
+/* LAYERS */
+/* Reset */
+@layer reset {
+/* =-=-=-=-=-= RESET CODE =-=-=-=-=-= */
+    *, *::before, *::after{box-sizing: border-box;}
+    *{margin: 0; padding: 0; font: inherit}
+    html{color-scheme: dark light;}
+    /* img{width: 100%;} */
+    img, picture, video{display: block; max-width: 100%;}
+    ul{list-style: none; padding: 0; margin: 0;}
+    a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer;}
+    a:-webkit-any-link:focus-visible{outline: 0px;}
+    h1, h2, h3, h4, h5, h6, p{margin: 0}
+    /*** OR  ***/
+    input, textarea, button, select{font: inherit}
+}
+/* General */
+@layer general {
+    /* =-=-=-=-=-= Font Face || CDN =-=-=-=-=-= */
+
+    :root {
+        --body-clr: initial;
+        --body-bg: initial;
+        --body-fs: initial;
+        --body-fw: initial;
+        --body-ff-ar: initial;
+        --body-ff-en: initial;
+
+        --clr-primary: blue;
+        --clr-secondary: grey;
+        --clr-success: green;
+        --clr-warning: orange;
+        --clr-danger: red;
+        --clr-white: white;
+        --clr-gray: gray;
+        --clr-dark: darkgray;
+        --clr-black: black;
+
+        --fs-xs: 1rem;
+        --fs-sm: 1.5rem;
+        --fs-md: 1.8rem;
+        --fs-lg: 1.9rem;
+        --fs-xl: 2rem;
+    }
+    /* Body | RTL */
+    body{
+        font-weight: var(--fw-body);
+        font-size: var(--fs-body);
+        color: var(--clr-body);
+        background: var(--bg-body);
+        font-family: var(--ff-body),sans-serif;
+    }
+    /* =-=-=-=-=-= =-=-=-=-=-= =-=-=-=-=-= */
+}
+/* Components */
+@import url('./components.css') layer(components);
+
+/* Utilities */
+@layer utilities {
+    /* =-=-=-=-=-= Utilities =-=-=-=-=-= */
+    /* =-= Font Sizes =-= */
+    .fs-xs {font-size: clamp(var(--fs-xs-min), 7.5vw, var(--fs-xs));}.fs-sm {font-size: clamp(var(--fs-sm-min), 7.5vw, var(--fs-sm));}.fs-md {font-size: clamp(var(--fs-md-min), 7.5vw, var(--fs-md));}.fs-lg {font-size: clamp(var(--fs-lg-min), 7.5vw, var(--fs-lg));}.fs-xl {font-size: clamp(var(--fs-xl-min), 7.5vw, var(--fs-xl));}
+    /* =-= Font Weight =-= */
+    .fw-lighter {font-weight: 100;}.fw-light {font-weight: 300;}.fw-normal {font-weight: 400;}.fw-medium {font-weight: 500;}.fw-semibold {font-weight: 600;}.fw-bold {font-weight: 700;}.fw-extrabold {font-weight: 800;}.fw-heavy {font-weight: 900;}.text-start {text-align: start;}.text-center {text-align: center;}.text-end {text-align: end;}
+    /* =-= Text Colors =-= */
+}
+

@@ -47,7 +47,7 @@ body{
   }
     :root {
         --body-clr: initial;
-        --body-bg: initial;
+        --body-bg: #FEFEFE;
         --body-fs: 16px;
         --body-fw: 400;
         --body-ff-ar: 'Archivo', sans-serif;

@@ -3,6 +3,45 @@
 @import url('../vendors/bootstrap-grid.rtl.css') layer(layout.grid);
 
 @layer layout{
+    /* Header */
+    .smrt-header .header-wrapper {display: flex;align-items: center;justify-content: space-between;gap: 1rem;}
+    .smrt-header .logo img{max-width: 150px;}
+    .smrt-header .header-nav > ul {display: flex;align-items: center;gap: 40px;}
+    .smrt-header .header-nav li a {display: flex; align-items: center; gap: 0.5rem; color: var(--clr-dark);font-size: 16px;line-height: 1.6;font-weight: 400;}
+    .smrt-header .header-nav ul:not(.nav-ddl) > li:hover > a,
+    .smrt-header .header-nav ul:not(.nav-ddl) > li.active > a {color: var(--clr-secondary);}
+    .smrt-header .header-nav ul:not(.nav-ddl) > li.active a {font-weight: 700;}
+   
+    .nav-ddl {position: relative;}
+    .nav-ddl > a svg.ddl-arrow {transition:0.1s transform ease-in-out;}
+    .nav-ddl:hover > a svg.ddl-arrow {transform: rotate(180deg); transition:0.1s transform ease-in-out;}
+    
+    .nav-ddl .nav-submenu {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        max-height: 250px;
+        min-width: 100px;
+        padding: 1rem 0;
+        border-radius:8px;
+        box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.2);
+    }
+    .nav-ddl:hover .nav-submenu{display: flex;}
+    .nav-ddl .nav-submenu li {width: 100%;}
+    .nav-ddl .nav-submenu li:not(:last-child){margin-bottom: 8px;}
+    .nav-ddl .nav-submenu li a {justify-content: center;color: var(--clr-dark);}
+    /* Mobile */
+    .header-nav{display:none;}
+    @media screen and (min-width:768px){
+        .nav-mobile {display: none;}
+        .header-nav{display: block;}
+    }
+    
+
+
+
+
     .smrt-main-container{
         background: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
         url('../../assets/images/single-mobile-bg.svg');
@@ -14,10 +53,10 @@
         min-height: 600px;
         padding-top: 40px;
     }
-    header{
+    /* header{
         height: 25px;
         margin-bottom: 120px;
-    }
+    } */
     .smrt-main-container h2.smrt-main-title{
         color: var(--clr-white)!important;
     }

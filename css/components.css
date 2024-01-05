@@ -1,0 +1,61 @@
+h2.smrt-main-title{
+     color: var(--clr-primary);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-12);
+}
+h4.smrt-main-title{
+    font-size:var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--clr-white);
+    line-height: var(--lh-12);
+}
+p.smrt-main-subtitle{
+    color: var(--clr-primary);
+    font-size: var(--body-fs);
+    font-weight: var(--body-fw);
+    line-height: var(--lh-16);
+}
+p.smrt-feature{
+    color: var(--clr-secondary);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-12);
+}
+.smrt-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:8px;
+}
+
+
+/*  CARDS  */
+.card.smrt-card{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 20px;
+    border: 1px solid var(--clr-border);
+    background: var(--clr-white);
+    margin: 8px 0;
+    height: calc(100% - 16px);
+}
+.card.smrt-card .card-title{
+    color:var(--clr-dark);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-12);
+}
+.card.smrt-card .card-subtitle{
+    font-size: var(--body-fs);
+    font-weight: var(--body-fw);
+    line-height: var(--lh-16);
+    color:var(--clr-dark);
+    opacity: 0.7;
+
+}

@@ -1,9 +1,12 @@
 /* === === BODY === === */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap');
+
 body{
     color: var(--body-clr);
     font-size: var(--body-fs);
     font-weight: var(--body-fw);
     background: var(--body-bg);
+
   }
   html[dir="rtl"] body{font-family: var(--body-ff-ar);}
   html[dir="ltr"] body{font-family: var(--body-ff-en);}
@@ -45,24 +48,73 @@ body{
     :root {
         --body-clr: initial;
         --body-bg: initial;
-        --body-fs: initial;
-        --body-fw: initial;
-        --body-ff-ar: initial;
-        --body-ff-en: initial;
+        --body-fs: 16px;
+        --body-fw: 400;
+        --body-ff-ar: 'Archivo', sans-serif;
+        --body-ff-en: 'Archivo', sans-serif;
 
-        --clr-primary: blue;
-        --clr-secondary: grey;
+        --clr-primary: #0E1E65;
+        --clr-secondary: #7138D9;
         --clr-success: green;
         --clr-warning: orange;
         --clr-danger: red;
-        --clr-white: white;
-        --clr-gray: gray;
-        --clr-dark: darkgray;
-        --clr-black: black;
+        --clr-white: #ffffff;
+        --clr-gray: #ffffff80;
+        --clr-light-gray: #ffffffcc;
+        --clr-lighter-gray: #F3F5FD;
+        --clr-dark: #0B174D;
+        --clr-black: #000000;
+        --clr-border: #0b174d33;
+        --footer-bg-clr: #080F2E;
+        --footer-clr: #E8EBF8;
 
-        --fs-xs: 1rem;
-        --fs-sm: 1.5rem;
+        --fs-xs: 13px;
+        --fs-sm: 25px;
         --fs-md: 1.8rem;
-        --fs-lg: 1.9rem;
-        --fs-xl: 2rem;
+        --fs-lg: 39px;
+        --fs-xl: 49px;
+        --fw-bold:700;
+
+        --lh-12: 120% ;
+        --lh-16: 160% ;
     }
+
+/* main */
+
+/* ABOUT PROJECT */
+#smrt-about-project{
+    padding-top:239px ;
+    padding-bottom: 176px;
+}
+#smrt-about-project p.smrt-main-subtitle{
+    max-width:755px;
+    margin-top: 16px;
+}
+
+/* ABOUT US */
+#smrt-about-us .smrt-cards-container{
+    padding-top: 22px;
+}
+
+/* Download application */
+#smrt-download-app{
+    margin-top:216px;
+    margin-bottom: 176px;
+    background:  linear-gradient(251deg, #152671 0%, #030716 100%);
+}
+#smrt-download-app .smrt-main-img{
+    margin-top: -48px;
+}
+.smrt-download-app{
+    max-width:435px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+.smrt-download-app .smrt-apps-container{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}

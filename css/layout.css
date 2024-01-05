@@ -3,4 +3,54 @@
 @import url('../vendors/bootstrap-grid.rtl.css') layer(layout.grid);
 
 @layer layout{
+    .smrt-main-container{
+        background: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../../assets/images/single-mobile-bg.svg');
+         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        padding-top: 40px;
+    }
+    header{
+        height: 25px;
+        margin-bottom: 120px;
+    }
+    .smrt-main-container h2.smrt-main-title{
+        color: var(--clr-white)!important;
+    }
+    .smrt-main-container .smrt-main-img{
+        margin-bottom: -8%;
+    }
+    @media (min-width:767px) {
+        .smrt-main-container .smrt-main-img{
+        margin-top: 50px;
+        }
+    }
+
+
+
+    /*   footer */
+    footer{
+        background: var(--footer-bg-clr);
+        /*height: 80px;*/
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        height: 80px;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .footer-social-list{
+        gap: 12px;
+        display: flex;
+        align-items: center;
+    }
+    footer p.smrt-main-subtitle{
+        color: var(--footer-clr) !important;
+    }
 }

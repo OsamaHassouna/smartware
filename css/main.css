@@ -6,3 +6,82 @@
 @import url('./components.css') layer(components);
 /* @import url('./theme.css') layer(theme); */
 @import url('./utilities.css') layer(utilities);
+
+.smrt-hero{
+    padding-block: 40px;
+    background-image: url(../assets/images/home-hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.smrt-hero .hero-content{
+    --padding-inline: 2rem;
+    --content-max-width: 70ch;
+    --breakout-max-width: 85ch;
+    --content-padding: min(100% - (var(--padding-inline) * 2), calc(var(--content-max-width)/2));
+    --breakout-width: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+    --content-col: calc(var(--content-max-width)/12);
+
+    --split-first-block-startpoint: content-start;
+    --split-first-block-endpoint: split-middle;
+    --split-last-block-startpoint: split-middle;
+    --split-last-block-endpoint: content-end;
+}
+.smrt-hero .hero-content{
+    padding-block: 70px;
+    display: grid;
+    grid-template-columns: 
+        [full-width-start]
+        minmax(var(--padding-inline), 1fr)
+        [breakout-start]
+        minmax(0,var(--breakout-width))
+        [content-start]  
+        var(--content-padding)
+        [split-middle]
+        var(--content-padding)
+        [content-end]
+        minmax(0,var(--breakout-width))
+        [breakout-end] 
+        minmax(var(--padding-inline), 1fr)
+        [full-width-end];
+}
+.smrt-hero .hero-content > *{
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    height: 100%;
+}   
+.smrt-hero .hero-content > :first-child { 
+    grid-column-start: var(--split-first-block-startpoint);
+    grid-column-end: var(--split-first-block-endpoint);
+}
+.smrt-hero .hero-content > :last-child {
+     grid-column-start: var(--split-last-block-startpoint);
+    grid-column-end: var(--split-last-block-endpoint);
+}
+.smrt-hero .hero-content > .full-width:first-child{
+    --split-first-block-startpoint: full-width-start;
+}
+.smrt-hero .hero-content > .full-width:last-child{
+    --split-last-block-endpoint: full-width-end;
+}
+.smrt-hero .hero-content > .breakout:first-child{
+    --split-first-block-startpoint: breakout-start;
+}
+.smrt-hero .hero-content > .breakout:last-child{
+    --split-last-block-endpoint: breakout-end;
+}
+@media screen and (min-width:576px){.smrt-hero .hero-content {--content-max-width: 540px;}}
+@media screen and (min-width:768px){.smrt-hero .hero-content {--content-max-width: 720px;}}
+@media screen and (min-width:992px){.smrt-hero .hero-content {--content-max-width: 960px;}}
+@media screen and (min-width:1200px){.smrt-hero .hero-content {--content-max-width: 1140px;}}
+@media screen and (min-width:1400px){.smrt-hero .hero-content {--content-max-width: 1320px;}}
+
+.hero-content h2 {
+    color: var(--clr-primary);
+    font-size: clamp(2.5rem, 4.75vw, 4.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.52px;
+    margin-bottom: 56px;
+}
+.hero-content h2 span {color: var(--clr-secondary);}

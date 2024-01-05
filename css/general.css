@@ -28,6 +28,8 @@ body{
   .svg-dark{color:var(--clr-dark,darkgray)}
   .svg-black{color:var(--clr-black,black)}
   /* ==== === ==== === ==== === ==== */
+  img.full-width{width: 100%;}
+  /* ==== === ==== === ==== === ==== */
   /* === === SCROLL === === */
   .scroll{
     padding-inline-end: var(--scroll-padding-istart);

@@ -10,70 +10,84 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="smrt-header">
-      <div class="container">
-        <div class="header-wrapper">
-          <div class="logo">
-              <img src="./assets/images/logo.svg" alt="Smartware Logo" width="150">
+    <section class="smrt-hero">
+      <!-- Header -->
+      <header class="smrt-header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="Smartware Logo" width="150">
+            </div>
+            <a class="nav-mobile">
+              <img src="./assets/icons/bars.svg" alt="Menu Icon">
+            </a>
+            <nav class="header-nav">
+              <ul>
+                <li class="active">
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/">About</a>
+                </li>
+                <li class="nav-ddl">
+                  <a>
+                    <span>Services</span>
+                    <svg class="ddl-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <ul class="nav-submenu">
+                    <li>
+                      <a href="">service 1</a>
+                    </li>
+                    <li>
+                      <a href="">service 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/">Work</a>
+                </li>
+                <li>
+                  <a href="/">Contact</a>
+                </li>
+                <li class="nav-ddl">
+                  <a>
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.3334 8.5C17.3334 7.40566 17.1178 6.32202 16.699 5.31098C16.2802 4.29993 15.6664 3.38127 14.8926 2.60745C14.1188 1.83363 13.2001 1.2198 12.189 0.801009C11.178 0.38222 10.0944 0.166672 9.00002 0.166672C6.78988 0.166672 4.67027 1.04465 3.10746 2.60745C1.54466 4.17025 0.666687 6.28987 0.666687 8.5C0.666687 10.7101 1.54466 12.8298 3.10746 14.3926C4.67027 15.9554 6.78988 16.8333 9.00002 16.8333C11.2102 16.8333 13.3298 15.9554 14.8926 14.3926C16.4554 12.8298 17.3334 10.7101 17.3334 8.5ZM15.6084 7.66667H13.1667C13.0292 5.70679 12.3577 3.82196 11.225 2.21667C12.3887 2.62998 13.4148 3.3584 14.1888 4.32071C14.9627 5.28302 15.4542 6.44139 15.6084 7.66667ZM6.56669 9.33334H11.5C11.2868 11.3922 10.4092 13.3256 9.00002 14.8417C7.59175 13.332 6.73435 11.3911 6.56669 9.33334ZM6.56669 7.66667C6.76076 5.61819 7.61468 3.6881 9.00002 2.16667C10.4206 3.67177 11.3001 5.60671 11.5 7.66667H6.56669ZM6.86669 2.19167C5.72798 3.80586 5.04569 5.69727 4.89169 7.66667H2.39169C2.54911 6.42625 3.05219 5.25511 3.84349 4.28698C4.63479 3.31886 5.6824 2.59278 6.86669 2.19167ZM2.39169 9.33334H4.89169C5.02893 11.3011 5.70659 13.1927 6.85002 14.8C5.67 14.3969 4.62668 13.671 3.83858 12.7047C3.05048 11.7383 2.5492 10.5703 2.39169 9.33334ZM11.1834 14.7917C12.3237 13.1839 13.0089 11.2981 13.1667 9.33334H15.625C15.4674 10.5669 14.968 11.7317 14.1831 12.6963C13.3982 13.6609 12.3591 14.3867 11.1834 14.7917Z" fill="currentColor"/>
+                    </svg>
+                    <span>Eng</span>
+                    <svg class="ddl-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <ul class="nav-submenu">
+                    <li>
+                      <a href="">العربية</a>
+                    </li>
+                    <li>
+                      <a href="">English</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <a class="nav-mobile">
-            <img src="./assets/icons/bars.svg" alt="Menu Icon">
-          </a>
-          <nav class="header-nav">
-            <ul>
-              <li class="active">
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">About</a>
-              </li>
-              <li class="nav-ddl">
-                <a>
-                  <span>Services</span>
-                  <svg class="ddl-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-                <ul class="nav-submenu">
-                  <li>
-                    <a href="">service 1</a>
-                  </li>
-                  <li>
-                    <a href="">service 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="/">Work</a>
-              </li>
-              <li>
-                <a href="/">Contact</a>
-              </li>
-              <li class="nav-ddl">
-                <a>
-                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.3334 8.5C17.3334 7.40566 17.1178 6.32202 16.699 5.31098C16.2802 4.29993 15.6664 3.38127 14.8926 2.60745C14.1188 1.83363 13.2001 1.2198 12.189 0.801009C11.178 0.38222 10.0944 0.166672 9.00002 0.166672C6.78988 0.166672 4.67027 1.04465 3.10746 2.60745C1.54466 4.17025 0.666687 6.28987 0.666687 8.5C0.666687 10.7101 1.54466 12.8298 3.10746 14.3926C4.67027 15.9554 6.78988 16.8333 9.00002 16.8333C11.2102 16.8333 13.3298 15.9554 14.8926 14.3926C16.4554 12.8298 17.3334 10.7101 17.3334 8.5ZM15.6084 7.66667H13.1667C13.0292 5.70679 12.3577 3.82196 11.225 2.21667C12.3887 2.62998 13.4148 3.3584 14.1888 4.32071C14.9627 5.28302 15.4542 6.44139 15.6084 7.66667ZM6.56669 9.33334H11.5C11.2868 11.3922 10.4092 13.3256 9.00002 14.8417C7.59175 13.332 6.73435 11.3911 6.56669 9.33334ZM6.56669 7.66667C6.76076 5.61819 7.61468 3.6881 9.00002 2.16667C10.4206 3.67177 11.3001 5.60671 11.5 7.66667H6.56669ZM6.86669 2.19167C5.72798 3.80586 5.04569 5.69727 4.89169 7.66667H2.39169C2.54911 6.42625 3.05219 5.25511 3.84349 4.28698C4.63479 3.31886 5.6824 2.59278 6.86669 2.19167ZM2.39169 9.33334H4.89169C5.02893 11.3011 5.70659 13.1927 6.85002 14.8C5.67 14.3969 4.62668 13.671 3.83858 12.7047C3.05048 11.7383 2.5492 10.5703 2.39169 9.33334ZM11.1834 14.7917C12.3237 13.1839 13.0089 11.2981 13.1667 9.33334H15.625C15.4674 10.5669 14.968 11.7317 14.1831 12.6963C13.3982 13.6609 12.3591 14.3867 11.1834 14.7917Z" fill="currentColor"/>
-                  </svg>
-                  <span>Eng</span>
-                  <svg class="ddl-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-                <ul class="nav-submenu">
-                  <li>
-                    <a href="">العربية</a>
-                  </li>
-                  <li>
-                    <a href="">English</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
         </div>
+      </header>
+
+      <div class="hero-content">
+        <div class="content-details">
+          <h2>
+            The <span>right piece</span>
+            <br>
+            filling the gap
+          </h2>
+          <a href="" class="btn smrt-btn btn-secondary">Get in touch</a>
+        </div>
+        <img class="content-img full-width" src="./assets/images/home-hero.svg" alt="Image shows a person deliver data to a laptop">
       </div>
-    </header>
+    </section>
     <!-- Content -->
     <main>
       <section>

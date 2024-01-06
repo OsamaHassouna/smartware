@@ -7,13 +7,13 @@
 /* @import url('./theme.css') layer(theme); */
 @import url('./utilities.css') layer(utilities);
 
-.smrt-hero{
+.home-hero{
     padding-block: 40px;
     background-image: url(../assets/images/home-hero-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.smrt-hero .hero-content{
+.home-hero .hero-content{
     --padding-inline: 2rem;
     --content-max-width: 70ch;
     --breakout-max-width: 85ch;
@@ -26,7 +26,7 @@
     --split-last-block-startpoint: split-middle;
     --split-last-block-endpoint: content-end;
 }
-.smrt-hero .hero-content{
+.home-hero .hero-content{
     padding-block: 70px;
     display: grid;
     grid-template-columns: 
@@ -44,37 +44,37 @@
         minmax(var(--padding-inline), 1fr)
         [full-width-end];
 }
-.smrt-hero .hero-content > *{
+.home-hero .hero-content > *{
     display: grid;
     align-content: center;
     justify-items: start;
     height: 100%;
 }   
-.smrt-hero .hero-content > :first-child { 
+.home-hero .hero-content > :first-child { 
     grid-column-start: var(--split-first-block-startpoint);
     grid-column-end: var(--split-first-block-endpoint);
 }
-.smrt-hero .hero-content > :last-child {
+.home-hero .hero-content > :last-child {
      grid-column-start: var(--split-last-block-startpoint);
     grid-column-end: var(--split-last-block-endpoint);
 }
-.smrt-hero .hero-content > .full-width:first-child{
+.home-hero .hero-content > .full-width:first-child{
     --split-first-block-startpoint: full-width-start;
 }
-.smrt-hero .hero-content > .full-width:last-child{
+.home-hero .hero-content > .full-width:last-child{
     --split-last-block-endpoint: full-width-end;
 }
-.smrt-hero .hero-content > .breakout:first-child{
+.home-hero .hero-content > .breakout:first-child{
     --split-first-block-startpoint: breakout-start;
 }
-.smrt-hero .hero-content > .breakout:last-child{
+.home-hero .hero-content > .breakout:last-child{
     --split-last-block-endpoint: breakout-end;
 }
-@media screen and (min-width:576px){.smrt-hero .hero-content {--content-max-width: 540px;}}
-@media screen and (min-width:768px){.smrt-hero .hero-content {--content-max-width: 720px;}}
-@media screen and (min-width:992px){.smrt-hero .hero-content {--content-max-width: 960px;}}
-@media screen and (min-width:1200px){.smrt-hero .hero-content {--content-max-width: 1140px;}}
-@media screen and (min-width:1400px){.smrt-hero .hero-content {--content-max-width: 1320px;}}
+@media screen and (min-width:576px){.home-hero .hero-content {--content-max-width: 540px;}}
+@media screen and (min-width:768px){.home-hero .hero-content {--content-max-width: 720px;}}
+@media screen and (min-width:992px){.home-hero .hero-content {--content-max-width: 960px;}}
+@media screen and (min-width:1200px){.home-hero .hero-content {--content-max-width: 1140px;}}
+@media screen and (min-width:1400px){.home-hero .hero-content {--content-max-width: 1320px;}}
 
 .hero-content h2 {
     color: var(--clr-primary);
@@ -85,3 +85,65 @@
     margin-bottom: 56px;
 }
 .hero-content h2 span {color: var(--clr-secondary);}
+
+/* ABOUT */
+.home-about {padding-block: 34px 144px;}
+.section-title h3 {
+    color: var(--clr-primary);
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.section-title h3 > span {
+    color: var(--clr-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.section-title h3 > span::before {
+    content: '';
+    width: 48px;
+    height: 1px;
+    background: var(--clr-secondary);
+    display: inline-flex;
+}
+.about-content {
+    color: var(--clr-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6; 
+}
+.about-card {
+    --card-bg: var(--clr-secondary);
+    --card-border-clr: var(--clr-secondary);
+    --card-mb: 40px;
+}
+.about-card .svg-icon svg {
+    color: white;
+    width: 64px;
+    height: 64px;
+}
+.about-card .about-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about-card .about-title,
+.about-card .svg-icon {
+    margin-bottom: 16px;
+}
+.about-card .about-info {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.home-about .scroll {--scroll-min-height: 600px;}
+.home-about .scroll::-webkit-scrollbar {display: none;}

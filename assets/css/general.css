@@ -60,10 +60,6 @@ img.full-width{width: 100%;}
     --scroll-thumb-border-radius: 8px;
 }
 
-
-
-
-
 :root {
     --body-clr: initial;
     --body-bg: #FEFEFE;
@@ -96,44 +92,4 @@ img.full-width{width: 100%;}
 
     --lh-12: 120% ;
     --lh-16: 160% ;
-}
-
-/* main */
-
-/* ABOUT PROJECT */
-#smrt-about-project{
-    padding-top:239px ;
-    padding-bottom: 176px;
-}
-#smrt-about-project p.smrt-main-subtitle{
-    max-width:755px;
-    margin-top: 16px;
-}
-
-/* ABOUT US */
-#smrt-about-us .smrt-cards-container{
-    padding-top: 22px;
-}
-
-/* Download application */
-#smrt-download-app{
-    margin-top:216px;
-    margin-bottom: 176px;
-    background:  linear-gradient(251deg, #152671 0%, #030716 100%);
-}
-#smrt-download-app .smrt-main-img{
-    margin-top: -48px;
-}
-.smrt-download-app{
-    max-width:435px;
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    justify-content: center;
-}
-.smrt-download-app .smrt-apps-container{
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 32px;
 }

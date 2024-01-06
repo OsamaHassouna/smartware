@@ -1,15 +1,8 @@
-@layer reset, general, layout, components, themes, utilities;
 
-@import url('./reset.css') layer(reset);
-@import url('./general.css') layer(general);
-@import url('./layout.css') layer(layout);
-@import url('./components.css') layer(components);
-/* @import url('./theme.css') layer(theme); */
-@import url('./utilities.css') layer(utilities);
-
+/* =-=-=-=-=-=-= HOME PAGE =-=-=-=-=-=-= */
 .home-hero{
     padding-block: 40px;
-    background-image: url(../assets/images/home-hero-bg.svg);
+    background-image: url(../media/images/home-hero-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,6 +20,7 @@
     --split-last-block-endpoint: content-end;
 }
 .home-hero .hero-content{
+    overflow: hidden;
     padding-block: 70px;
     display: grid;
     grid-template-columns: 
@@ -87,7 +81,27 @@
 .hero-content h2 span {color: var(--clr-secondary);}
 
 /* ABOUT */
-.home-about {padding-block: 34px 144px;}
+.home-about {padding-block: 34px 144px; position: relative;}
+.bg-title {
+    width: 100%;
+    font-size: clamp(23.25vw, 1vw, 400px);
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    color: transparent;
+    background: linear-gradient(0deg, transparent, #2f185b);
+    background-clip:text;
+    -webkit-background-clip:text;
+    z-index: -1;
+    top: -30px;
+    opacity: 0.2;
+}
+@supports (-webkit-text-stroke: 2px transparent) {
+    .bg-title {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 2px transparent;
+    }
+}
 .section-title h3 {
     color: var(--clr-primary);
     font-size: 49px;
@@ -147,3 +161,44 @@
 }
 .home-about .scroll {--scroll-min-height: 600px;}
 .home-about .scroll::-webkit-scrollbar {display: none;}
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= ABOUT PAGE || MOBILE =-=-=-=-=-=-= */
+.smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}
+/* ABOUT PROJECT */
+#smrt-about-project{
+    padding-top:239px ;
+    padding-bottom: 176px;
+}
+#smrt-about-project p.smrt-main-subtitle{
+    max-width:755px;
+    margin-top: 16px;
+}
+
+/* ABOUT US */
+#smrt-about-us .smrt-cards-container{
+    padding-top: 22px;
+}
+
+/* Download application */
+#smrt-download-app{
+    margin-top:216px;
+    margin-bottom: 176px;
+    background:  linear-gradient(251deg, #152671 0%, #030716 100%);
+}
+#smrt-download-app .smrt-main-img{
+    margin-top: -48px;
+}
+.smrt-download-app{
+    max-width:435px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+.smrt-download-app .smrt-apps-container{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */

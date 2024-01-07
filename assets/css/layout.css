@@ -65,7 +65,7 @@
     .smrt-social {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 20px;
     }
     .smrt-social li a svg {
         color: var(--footer-clr);

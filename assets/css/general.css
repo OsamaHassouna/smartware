@@ -61,7 +61,7 @@ img.full-width{width: 100%;}
 }
 
 :root {
-    --body-clr: initial;
+    --body-clr: var(--clr-primary);
     --body-bg: #FEFEFE;
     --body-fs: 16px;
     --body-fw: 400;
@@ -75,6 +75,10 @@ img.full-width{width: 100%;}
     --clr-danger: red;
     --clr-white: #ffffff;
     --clr-gray: #ffffff80;
+
+    --clr-primary-2: #152671;
+    --clr-dark-2: #030716;
+
     --clr-light-gray: #ffffffcc;
     --clr-lighter-gray: #F3F5FD;
     --clr-dark: #0B174D;

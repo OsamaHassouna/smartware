@@ -127,6 +127,7 @@
     background: var(--clr-secondary);
     display: inline-flex;
 }
+.services-content,
 .about-content {
     color: var(--clr-primary);
     font-size: 16px;
@@ -161,6 +162,35 @@
 }
 .home-about .scroll {--scroll-min-height: 600px;}
 .home-about .scroll::-webkit-scrollbar {display: none;}
+
+/* Services */
+.home-services{
+    padding-block: 96px 46px;
+    position: relative;
+    background: linear-gradient(251deg, var(--clr-primary-2) 0%, var(--clr-dark-2) 100%);
+    color: white;
+    isolation: isolate;
+}
+.home-services::before {
+    content: '';
+    width: 100%;
+    aspect-ratio: 320/59;
+    display: block;
+    position: absolute;
+    top: 70px;
+    background-image: url('../media/icons/bg-text.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+@media screen and (max-width:991.98px) {
+    .home-services::before{background-size: contain;}
+}
+/* .home-services .bg-title{
+    #5524B1
+} */
+.home-services .section-title h3,
+.home-services .services-content{color: white;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ABOUT PAGE || MOBILE =-=-=-=-=-=-= */
 .smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}

@@ -1,4 +1,17 @@
 
+/* =-=-=-=-=-=-= GENERAL =-=-=-=-=-=-= */
+.grid-col {
+    --grid-gap-col: 40px;
+    --grid-gap-row: 0;
+    display: grid;
+    width: 100%;
+    gap: var(--grid-gap-row) var(--grid-gap-col);
+}
+.grid-col[class*='col-']{grid-template-columns: 1fr;}
+@media screen and (min-width: 576px) {
+    .grid-col.col-2 {--grid-columns-width: calc(50% - var(--grid-gap-col));}
+    .grid-col[class*='col-']{grid-template-columns: repeat(auto-fill, minmax(var(--grid-columns-width), 1fr));}
+}
 /* =-=-=-=-=-=-= HOME PAGE =-=-=-=-=-=-= */
 .home-hero{
     padding-block: 40px;
@@ -186,11 +199,16 @@
 @media screen and (max-width:991.98px) {
     .home-services::before{background-size: contain;}
 }
-/* .home-services .bg-title{
-    #5524B1
-} */
 .home-services .section-title h3,
 .home-services .services-content{color: white;}
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+.home-services .service-card {display: grid; align-content: center; justify-items: start; gap: 16px; padding: 40px;}
+.home-services .service-card h4 {font-size: 25px;font-weight: 700;line-height: 1.2;color: white;}
+.home-services .service-card p {font-size: 16px;font-weight: 400;line-height: 1.6;color: white;}
+
+.home-services .service-card .smrt-btn {
+    margin-top: 16px;
+}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ABOUT PAGE || MOBILE =-=-=-=-=-=-= */
 .smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}

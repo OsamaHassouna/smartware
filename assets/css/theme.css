@@ -210,6 +210,49 @@
     margin-top: 16px;
 }
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* .filter-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+} */
+.filter-content .filter-item {
+    height: 350px;
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: var(--bs-gutter-x);
+}
+.filter-content .filter-item > img {
+    object-fit: cover;
+    border-radius: 16px;
+    width: 100%;
+}
+.filter-content .filter-item .item-description {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 64px 32px 32px;
+    background: linear-gradient(0deg, var(--clr-dark-2), rgba(21, 38, 113, 0.00));
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
+}
+.filter-content .filter-item .item-description h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: white;
+}
+.filter-content .filter-item .item-description p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 /* =-=-=-=-=-=-= ABOUT PAGE || MOBILE =-=-=-=-=-=-= */
 .smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}
 /* ABOUT PROJECT */

@@ -1,3 +1,8 @@
+@layer components.vendors, components.base;
+
+@import url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css') layer(components.vendors);
+
+@layer base{
 /* =-=-=-=-= Buttons =-=-=-=-= */
 /* Style */
 .btn{
@@ -437,3 +442,6 @@ p.smrt-feature{
     opacity: 0.7;
 
 } */
+
+
+}

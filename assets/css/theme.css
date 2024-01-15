@@ -251,6 +251,7 @@
     width: 100%;
     position: relative;
     margin-bottom: var(--bs-gutter-x);
+    min-height: 100%;
 }
 .filter-content .filter-item > img {
     object-fit: cover;
@@ -303,7 +304,8 @@
     padding-top:239px ;
     padding-bottom: 176px;
 }
-#smrt-about-project p.smrt-main-subtitle{
+#smrt-about-project p.smrt-main-subtitle ,
+.home-join-us p.smrt-main-subtitle{
     max-width:755px;
     margin-top: 16px;
 }
@@ -322,6 +324,15 @@
 #smrt-download-app .smrt-main-img{
     margin-top: -48px;
 }
+@media (max-width:991.98px) {
+    #smrt-download-app .smrt-main-img{
+        margin-top: 58px;
+    }
+    .smrt-download-app .smrt-apps-container{
+        justify-content: center;
+    }
+    #smrt-download-app h4.smrt-main-title{text-align: center;padding-top: 25px;}
+}
 .smrt-download-app{
     max-width:435px;
     display: flex;
@@ -336,3 +347,16 @@
     margin-top: 32px;
 }
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* =-=-=-=-=-=-= ABOUT PAGE || WEB =-=-=-=-=-=-= */
+.smrt-about-web .smrt-header .header-nav > li > a{color: white;}
+.smrt-about-web #smrt-download-app .smrt-main-img{
+    margin-bottom: -30px;
+}
+
+/**/
+.screens-carousel-container{
+    margin-bottom: 176px;
+}

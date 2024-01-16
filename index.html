@@ -111,7 +111,7 @@
                   Who we are?
                 </h3>
               </div>
-              <p class="about-content">
+              <p class="about-content title-content">
                 We are a professional software company with set of calibers, 
                 born out of a simple thought empowering your business by 
                 leveraging technology that accelerates your growth to reach 
@@ -199,7 +199,7 @@
                   What we do?
                 </h3>
               </div>
-              <p class="services-content">
+              <p class="services-content title-content">
                 Our project structure includes all required expertise and specialties 
                 needed to provide the requested level of professional services. 
                 These services include:
@@ -355,61 +355,155 @@
             <div class="col-12">
               <div class="slick-filter">
                 <nav class="filter-control">
-                  <a class="filter-item active" data-owl-filter="*">All</a>
-                  <a class="filter-item" data-owl-filter=".mobileApplications">Mobile applications</a>
-                  <a class="filter-item" data-owl-filter=".webApp">Web app</a>
-                  <a class="filter-item" data-owl-filter=".websites">Websites</a>
+                  <button type="button" data-filter="all" class="filter-item mixitup-control-active">All</button>
+                  <button type="button" data-filter=".mobileApplications" class="filter-item">Mobile applications</button>
+                  <button type="button" data-filter=".webApp" class="filter-item">Web app</button>
+                  <button type="button" data-filter=".websites" class="filter-item">Websites</button>
                 </nav>
 
                 <div class="filter-content">
-                  <a class="filter-item websites">
-                    <img src="./assets/media/images/filter-1.webp" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                  <div class="row gx-2">
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix websites">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/filter-1.webp" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                  <a class="filter-item mobileApplications">
-                    <img src="./assets/media/images/about-hero.webp" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix mobileApplications">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/about-hero.webp" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                  <a class="filter-item webApp">
-                    <img src="./assets/media/images/filter-3.webp" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix webApp">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/filter-3.webp" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                  <a class="filter-item webApp">
-                    <img src="./assets/media/images/filter-4.webp" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix webApp">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/filter-4.webp" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                  <a class="filter-item mobileApplications">
-                    <img src="./assets/media/images/filter-5.png" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix mobileApplications">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/filter-5.png" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                  <a class="filter-item websites">
-                    <img src="./assets/media/images/filter-1.webp" alt="Image of a mobile application">
-                    <div class="item-description">
-                      <h5>Mobile Application</h5>
-                      <p>Sawany el ketab Books classified ads platform</p>
+                    <div class="col-md-4 col-sm-6 col-xs-6 mix websites">
+                      <a class="filter-item">
+                        <img src="./assets/media/images/filter-1.webp" alt="Image of a mobile application">
+                        <div class="item-description">
+                          <h5>Mobile Application</h5>
+                          <p>Sawany el ketab Books classified ads platform</p>
+                        </div>
+                      </a>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="home-contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title">
+                <h3>
+                  <span>Contact us</span>
+                  Get in touch
+                </h3>
+              </div>
+              <p class="contact-content title-content">
+                Our project structure includes all required expertise and specialties needed to provide the
+                <br>
+                requested level of professional services. These services include:
+              </p>
+            </div>
+            <div class="col-md-10">
+              <div class="row gx-5">
+                <div class="col-md-6">
+                  <div class="smrt-input-label mb-40">
+                    <input type="text" class="form-control smrt-form-control" placeholder="Full name">
+                    <!-- <label>Full name</label> -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="smrt-input-label mb-40">
+                    <input type="email" class="form-control smrt-form-control" placeholder="Email">
+                    <!-- <label>Email</label> -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="smrt-input-label mb-40">
+                    <input type="text" class="form-control smrt-form-control" placeholder="Company">
+                    <!-- <label>Company</label> -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="smrt-input-label mb-40">
+                    <input type="text" class="form-control smrt-form-control" placeholder="Subject">
+                    <!-- <label>Subject</label> -->
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="smrt-input-label mb-55">
+                    <textarea class="form-control smrt-form-control" rows="6" placeholder="Your message"></textarea>
+                    <!-- <label>Your message</label> -->
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <a href="" class="btn smrt-btn btn-secondary btn-lg">Send you message</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="home-clients">
+        <div class="bg-title">Our Clients </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title">
+                <h3>
+                  <span>OUR CLIENTS</span>
+                  Building Relationships,
+                  <br>
+                  Not Just Projects
+                </h3>
+              </div>
+              <p class="title-content mb-55">
+                Our project structure includes all required expertise and specialties needed to provide the
+                <br>
+                requested level of professional services. These services include:
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="smrt-footer">
@@ -456,11 +550,23 @@
     </footer>
    
     <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="./assets/vendors/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./assets/vendors/mixitup.min.js"></script>
     <script>
+      var portfolio_item = $('.home-products');
+      if (portfolio_item.length) {
+          var mixer = mixitup(portfolio_item, {
+              controls:{
+                  scope: 'local'
+              }
+          });
+      };
+  </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script> -->
+    <!-- <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script> -->
+    <!-- <script>
       var owl = $('.filter-content').owlCarousel({
           loop:false,
           margin:0,
@@ -489,6 +595,6 @@
         owl.owlcarousel2_filter( filter );
 
         } )
-    </script>
+    </script> -->
   </body>
 </html>

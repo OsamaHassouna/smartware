@@ -324,6 +324,50 @@
 }
 .home-clients .section-title h3 > span {justify-content: center;}
 .home-clients .section-title h3 > span:before {content: none;}
+
+.home-clients .clients-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.home-clients .clients-list .list-item {
+    padding: 40px 24px;
+    background: var(--clr-lighter-gray);
+    border-radius: 24px;
+    min-width: 294px;
+}
+.home-clients .clients-list .list-item > img {
+    margin-inline: auto;
+    height: 48px;
+    width: auto;
+    object-fit: cover;
+}
+
+.scroller[data-animated='true'] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg ,transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg ,transparent, white 20%, white 80%, transparent);
+}
+.scroller[data-animated='true'] .clients-list{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animations-duration, 20s) var(--_animations-direction, forwards) linear infinite;
+}
+.scroller[data-direction='reverse']{
+    --_animations-direction: reverse;
+}
+.scroller[data-speed='fast']{
+    --_animations-duration: 20s;
+}
+.scroller[data-speed='slow']{
+    --_animations-duration: 120s;
+}
+@keyframes scroll {
+    to{
+        transform: translate(-50%);
+    }
+}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 /* Career */
 .home-career{padding: 140px 30px; position: relative; overflow: hidden;}

@@ -78,6 +78,7 @@ img.full-width{width: 100%;}
 
     --clr-primary-2: #152671;
     --clr-dark-2: #030716;
+    --clr-light-dark-20: rgba(11, 23, 77, 0.2);
 
     --clr-light-gray: #ffffffcc;
     --clr-lighter-gray: #F3F5FD;

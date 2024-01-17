@@ -344,6 +344,8 @@
 .tablist-content{margin: var(--tablist-tabcontent-margin);}
 .tablist-content > .tab-pane {display: none;}
 .tablist-content > .active {display: block;}
+.tablist-content .fade:not(.show) {opacity: 0;}
+.tablist-content .fade {transition: opacity .2s linear;}
 
 .v-tablist.tablist .tablist-tabs{flex-direction: column;align-items: start;}
 /* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
@@ -370,6 +372,24 @@
     inset-inline-start: 0;
     position: absolute;
 }
+.smrt-tablist.h-tablist {
+    --tablist-tabs-padding-inline: 8px;
+    --tablist-tabs-padding-block: 8px;
+    --tablist-tabs-bg: white;
+    --tablist-tabs-border-width: 1px;
+    --tablist-tabs-border-clr: var(--clr-light-dark-20);
+    --tablist-tabs-border-radius: 40vw;
+    --tablist-tabs-gap: 0;
+    --tablist-tablink-padding-block: 10px;
+    --tablist-tablink-padding-inline: 24px;
+    --tablist-tablink-clr: var(--clr-primary);
+    --tablist-tablink-fs: 16px;
+    --tablist-tablink-border-radius: 40vw;
+    --tablist-tablink-active-bg: var(--clr-secondary);
+	--tablist-tabcontent-margin: 24px 0 0;
+}
+.smrt-tablist.h-tablist .tablist-tabs .tab-link::before {content: none;}
+
 /* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
 /* =-=-=-=-= Form Control =-=-=-=-= */
 /* === === General Styling === === */

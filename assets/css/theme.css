@@ -140,8 +140,7 @@
     background: var(--clr-secondary);
     display: inline-flex;
 }
-.services-content,
-.about-content {
+.title-content {
     color: var(--clr-primary);
     font-size: 16px;
     font-weight: 400;
@@ -224,7 +223,10 @@
     line-height: 1.2;
     color: var(--clr-primary);
     opacity: 0.7;
-    padding-bottom: 16px;    
+    padding-bottom: 16px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
 .filter-control .filter-item::before{
     content: none;
@@ -236,22 +238,20 @@
     transform: 0.2s all ease-in-out;
 }
 .filter-control .filter-item:hover::before,
-.filter-control .filter-item.active::before{
+.filter-control .filter-item.mixitup-control-active::before{
     content: '';
 }
 .filter-control .filter-item:hover,
-.filter-control .filter-item.active{
+.filter-control .filter-item.mixitup-control-active{
     color: var(--clr-secondary);
 }
-
-
 .filter-content .filter-item {
     height: 350px;
     display: inline-flex;
     width: 100%;
     position: relative;
     margin-bottom: var(--bs-gutter-x);
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 .filter-content .filter-item > img {
     object-fit: cover;
@@ -284,7 +284,6 @@
     width: 100% !important;
     transition: 0.2s all ease-in-out;
 }
-
 .filter-content .owl-stage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -294,9 +293,82 @@
 .filter-content .owl-dots,
 .filter-content .owl-nav {display: none;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* Contact us */
+.home-contact {position: relative;isolation: isolate;background: linear-gradient(251deg, var(--clr-primary-2) 0%, var(--clr-dark-2) 100%); color: white;padding: 96px 30px;}
+.home-contact:before{
+    content: '';
+    width: 100%;
+    aspect-ratio: 320/57;
+    display: block;
+    position: absolute;
+    inset-inline-start: 0;
+    top: 95px;
+    background-image: url('../media/icons/bg-text-contact.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.home-contact .section-title h3 > span {justify-content: center;}
+.home-contact .section-title h3 > span:before {content: none;}
+.home-contact .section-title h3 {color: white;}
+.contact-content { color: white; opacity: 0.8; margin-bottom: 45px;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* CLIENTS */
+.home-clients{padding: 140px 30px; position: relative; overflow: hidden;}
+.home-clients .bg-title {
+    top: 85px;
+    font-size: clamp(23.81vw, 1vw, 400px);
+    inset-inline-start: -13%;
+    white-space: nowrap;
+    width: auto;
+}
+.home-clients .section-title h3 > span {justify-content: center;}
+.home-clients .section-title h3 > span:before {content: none;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* Career */
+.home-career{padding: 140px 30px; position: relative; overflow: hidden;}
+.home-career .bg-title {
+    top: 85px;
+    font-size: clamp(23.81vw, 1vw, 400px);
+    inset-inline-start: 0;
+    text-align: center;
+    opacity: 0.1;
+    /* white-space: nowrap; */
+    /* width: auto; */
+}
+.home-career .section-title h3 > span {justify-content: center;}
+.home-career .section-title h3 > span:before {content: none;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
+/* Profile */
+.home-profile {position: relative;isolation: isolate;background: linear-gradient(251deg, var(--clr-primary-2) 0%, var(--clr-dark-2) 100%); color: white;padding: 80px 30px; overflow: hidden;}
+.home-profile:before{
+    content: '';
+    width: 100%;
+    aspect-ratio: 320/73;
+    display: block;
+    position: absolute;
+    inset-inline-start: 0;
+    top: 47px;
+    background-image: url('../media/icons/bg-text-profile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.home-profile .profile-title{
+    font-size: 61px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.home-profile .profile-content{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+@media screen and (min-width:768px) {
+    .home-profile .profile-actions{text-align: end;}
+}
+
 /* =-=-=-=-=-=-= ABOUT PAGE || MOBILE =-=-=-=-=-=-= */
 .smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}
 /* ABOUT PROJECT */

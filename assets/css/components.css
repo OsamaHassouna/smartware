@@ -370,7 +370,93 @@
     inset-inline-start: 0;
     position: absolute;
 }
-
+/* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
+/* =-=-=-=-= Form Control =-=-=-=-= */
+/* === === General Styling === === */
+label {
+    display: block;
+    font-size: var(--form-label-fs);
+    font-weight: var(--form-label-fw);
+    color: var(--form-label-clr);
+    margin-bottom: var(--form-label-mb);
+}
+.form-control{
+    display: inline-block;
+    width: var(--form-control-width);
+    height: var(--form-control-height);
+    line-height: var(--form-control-lineheight);
+    padding: var(--form-control-padding-block) var(--form-control-padding-inline);
+    border: 1px solid var(--form-control-border-clr);
+    border-radius: var(--form-control-border-radius);
+    background: var(--form-control-bg);
+    color: var(--form-control-clr);
+    font-size: var(--form-control-fs);
+    font-weight: var(--form-control-fw);
+    cursor: pointer;
+}
+.form-control:focus,
+.form-control[class*='-focused'],
+.form-control:focus-visible{
+    outline: 0;
+    box-shadow: none;
+    background: var(--form-control-focus-bg);
+    border-color: var(--form-control-focus-border-clr);
+}
+.form-control::placeholder,
+.form-control[class*='-placeholder']{
+    min-height: var(--form-control-placeholder-minheight);
+    font-size: var(--form-control-placeholder-fs);
+    font-weight: var(--form-control-placeholder-fw);
+    color: var(--form-control-placeholder-clr);
+}
+.form-control[readonly],
+.form-control:disabled,
+.form-control:disabled *,
+.form-control[class *='-disabled']{
+    background: var(--form-control-disabled-bg);
+    cursor: default;
+}
+.form-control:invalid{
+    border-color: var(--form-control-invalid-border-clr);
+}
+/* @media screen and (max-width: 560px) {input.form-control {min-width: 20rem;}} */
+/* ==== === ==== === ==== === ==== */
+/* textarea */
+textarea.form-control{height: auto; line-height: 1.5; min-height: var(--form-control-height);}
+/* ==== === ==== === ==== === ==== */
+/* === === Variables === === */
+label{
+    --form-label-fs: 20px;
+    --form-label-fw: 500;
+    --form-label-clr: var(--clr-body);
+    --form-label-mb: 10px;
+}
+.form-control {
+    --form-control-width: 100%;
+    --form-control-height: 40px;
+    --form-control-lineheight: 40px;
+    --form-control-padding-block: 5px;
+    --form-control-padding-inline: 20px;
+    --form-control-border-clr: var(--clr-secondary);
+    --form-control-border-radius: 5px;
+    --form-control-bg: var(--clr-white);
+    --form-control-clr: var(--clr-dark);
+    --form-control-fs: 14px;
+    --form-control-fw: 400;
+    /* focus */
+    --form-control-focus-bg: var(--clr-white);
+    --form-control-focus-border-clr: var(--clr-primary);
+    /* placeholder */
+    --form-control-placeholder-minheight: 18px;
+    --form-control-placeholder-fs: 14px;
+    --form-control-placeholder-fw: 400;
+    --form-control-placeholder-clr: var(--clr-secondary);
+    /* invalid */
+    --form-control-invalid-border-clr: var(--clr-danger);
+    /* disabled */
+    --form-control-disabled-bg: var(--clr-secondary);
+}
+/* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
 /* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
 /* =-=-=-=-= Theme =-=-=-=-= */
 .smrt-card {
@@ -380,6 +466,32 @@
     /* --card-bg: var(--clr-secondary); */
     gap: 16px;
 }
+/* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
+.smrt-form-control {
+	border: 0;
+    border-bottom: 2px solid white;
+    --form-control-bg: transparent;
+    /* --form-control-border-clr: transparent; */
+    --form-control-border-radius: 0;
+    --form-control-height: 56px;
+    --form-control-padding-inline: 0;
+    --form-control-clr: white;
+    --form-control-fs: 16px;
+    --form-control-lineheight: 26px;
+    --form-control-padding-block: 15px;
+    --form-control-focus-bg: transparent;
+    --form-control-focus-border-clr: white;
+	--form-control-placeholder-fs: 16px;
+    --form-control-placeholder-clr: white;
+    --form-control-placeholder-minheight: 26px;
+}
+/* .smrt-form-control:focus,
+.smrt-form-control[class*='-focused'],
+.smrt-form-control:focus-visible{
+	border-bottom: 2px solid white;
+} */
+
+
 /* =-=-=-=-= =-=-=-=-= =-=-=-=-= =-=-=-=-= */
 h2.smrt-main-title{
      color: var(--clr-primary);
@@ -414,9 +526,8 @@ p.smrt-feature{
     gap:8px;
 }
 
-
 /*  CARDS  */
-	.card.smrt-card.feature-card{
+.card.smrt-card.feature-card{
     --card-border-radius: 20px;
     --card-border-clr: var(--clr-border);
     margin: 8px 0;

@@ -87,7 +87,6 @@
             </div>
           </header>
         </div>
-        <main>
           <section>
             <div class="container-fluid">
               <div class="row align-items-center">
@@ -105,7 +104,6 @@
           </div>
             </div>
           </section>
-        </main>
         </div>
       <!-- Content -->
       <!--  ABOUT PROJECT  -->
@@ -269,12 +267,14 @@
           </div>
         </div>
         <div class="screens-carousel-container">
-        <div class="d-flex gap-3 ">
-          <div><img src="assets/media/images/application-screen-1.svg"></div>
-          <div><img src="assets/media/images/application-screen-2.svg"></div>
-          <div><img src="assets/media/images/application-screen-3.svg"></div>
-          <div><img src="assets/media/images/application-screen-4.svg"></div>
-          <div><img src="assets/media/images/application-screen-5.svg"></div>
+          <div class="screens-carousel1">
+          <div class="screens-carousel">
+<!--            <div class=""><img src="assets/media/images/application-screen-1.svg"></div>-->
+<!--            <div class=""><img src="assets/media/images/application-screen-2.svg"></div>-->
+<!--            <div class=""><img src="assets/media/images/application-screen-3.svg"></div>-->
+<!--            <div class=""><img src="assets/media/images/application-screen-4.svg"></div>-->
+<!--            <div class=""><img src="assets/media/images/application-screen-5.svg"></div>-->
+          </div>
         </div></div>
       </section>
     </main>
@@ -328,29 +328,31 @@
     </footer>
 
     <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="./assets/vendors/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./assets/vendors/mixitup.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.screens-carousel').owlCarousel({
-            loop:false,
-            margin:16,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:6
+      $(document).ready(function(){
+        $(".screens-carousel").owlCarousel(
+                {
+                  loop:false,
+                  margin:10,
+                  nav:true,
+                  responsive:{
+                    0:{
+                      items:1
+                    },
+                    600:{
+                      items:3
+                    },
+                    1000:{
+                      items:5
+                    }
+                  }
                 }
-            }
-        })
-        });
+        );
+      });
     </script>
   </body>
 </html>

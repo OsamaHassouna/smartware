@@ -91,11 +91,17 @@
         color: var(--clr-white)!important;
     }
     .smrt-main-container .smrt-main-img{
-        margin-bottom: -8%;
+        margin-bottom: -63px;
     }
     @media (min-width:767px) {
         .smrt-main-container .smrt-main-img{
         margin-top: 50px;
         }
+    }
+    .smrt-about-mobile .smrt-main-container {
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }

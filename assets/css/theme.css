@@ -77,11 +77,11 @@
 .home-hero .hero-content > .breakout:last-child{
     --split-last-block-endpoint: breakout-end;
 }
-@media screen and (min-width:576px){.home-hero .hero-content {--content-max-width: 540px;}}
-@media screen and (min-width:768px){.home-hero .hero-content {--content-max-width: 720px;}}
-@media screen and (min-width:992px){.home-hero .hero-content {--content-max-width: 960px;}}
-@media screen and (min-width:1200px){.home-hero .hero-content {--content-max-width: 1140px;}}
-@media screen and (min-width:1400px){.home-hero .hero-content {--content-max-width: 1320px;}}
+@media screen and (min-width:576px){.home-hero .hero-content,.screens-carousel-container {--content-max-width: 540px;}}
+@media screen and (min-width:768px){.home-hero .hero-content,.screens-carousel-container {--content-max-width: 720px;}}
+@media screen and (min-width:992px){.home-hero .hero-content,.screens-carousel-container {--content-max-width: 960px;}}
+@media screen and (min-width:1200px){.home-hero .hero-content,.screens-carousel-container {--content-max-width: 1140px;}}
+@media screen and (min-width:1400px){.home-hero .hero-content,.screens-carousel-container {--content-max-width: 1320px;}}
 
 .hero-content h2 {
     color: var(--clr-primary);
@@ -359,4 +359,37 @@
 /**/
 .screens-carousel-container{
     margin-bottom: 176px;
+    overflow: hidden;
+    padding-block: 70px;
+    display: grid;
+    grid-template-columns:
+        [full-width-start]
+        minmax(var(--padding-inline), 1fr)
+        [breakout-start]
+        minmax(0,var(--breakout-width))
+        [content-start]
+        var(--content-padding)
+        [split-middle]
+        var(--content-padding)
+        [content-end]
+        minmax(0,var(--breakout-width))
+        [breakout-end]
+        minmax(var(--padding-inline), 1fr)
+        [full-width-end];
+    --padding-inline: 2rem;
+    --content-max-width: 70ch;
+    --breakout-max-width: 85ch;
+    --content-padding: min(100% - (var(--padding-inline) * 2), calc(var(--content-max-width)/1));
+    --breakout-width: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+    --split-first-block-startpoint: content-start;
+    --split-last-block-endpoint: content-end;
+}
+.screens-carousel1{
+    grid-column-start: var(--split-first-block-startpoint);
+    --split-last-block-endpoint: full-width-end;
+    grid-column-end: var(--split-last-block-endpoint);
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    height: 100%;
 }

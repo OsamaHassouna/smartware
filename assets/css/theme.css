@@ -325,30 +325,35 @@
 .home-clients .section-title h3 > span {justify-content: center;}
 .home-clients .section-title h3 > span:before {content: none;}
 
-.home-clients .clients-list {
+.smrt-about-mobile .mobile-list,
+.smrt-about-mobile .clients-list {
     display: flex;
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
 }
+/* .smrt-about-mobile .mobile-list .list-item, */
 .home-clients .clients-list .list-item {
     padding: 40px 24px;
     background: var(--clr-lighter-gray);
     border-radius: 24px;
     min-width: 294px;
 }
+.smrt-about-mobile .mobile-list .list-item > img,
 .home-clients .clients-list .list-item > img {
     margin-inline: auto;
     height: 48px;
     width: auto;
     object-fit: cover;
 }
+.smrt-about-mobile .mobile-list .list-item > img{height: auto;}
 
 .scroller[data-animated='true'] {
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg ,transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg ,transparent, white 20%, white 80%, transparent);
 }
+.scroller[data-animated='true'] .mobile-list,
 .scroller[data-animated='true'] .clients-list{
     width: max-content;
     flex-wrap: nowrap;

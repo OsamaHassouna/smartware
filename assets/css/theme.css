@@ -326,7 +326,7 @@
 .home-clients .section-title h3 > span:before {content: none;}
 
 .smrt-about-mobile .mobile-list,
-.smrt-about-mobile .clients-list {
+.home-clients .clients-list {
     display: flex;
     align-items: center;
     gap: 24px;

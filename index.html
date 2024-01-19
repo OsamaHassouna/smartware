@@ -29,16 +29,16 @@
               <div class="logo">
                   <img src="./assets/media/images/logo.svg" alt="Smartware Logo" width="150">
               </div>
-              <a class="nav-mobile">
+              <a class="nav-mobile" data-bs-toggle="collapse" data-bs-target="#smartHeader" aria-expanded="false">
                 <img src="./assets/media/icons/bars.svg" alt="Menu Icon">
               </a>
-              <nav class="header-nav">
+              <nav class="header-nav collapse" id="smartHeader">
                 <ul>
                   <li class="active">
-                    <a href="/">Home</a>
+                    <a href="index.html">Home</a>
                   </li>
                   <li>
-                    <a href="/single-mobile.html">About</a>
+                    <a href="single-mobile.html">About</a>
                   </li>
                   <li class="nav-ddl">
                     <a>
@@ -57,7 +57,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="/single-desktop.html">Work</a>
+                    <a href="single-desktop.html">Work</a>
                   </li>
                   <li>
                     <a href="/">Contact</a>
@@ -765,57 +765,6 @@
       };
   </script>
 
-  <script>
-    const scrollers = document.querySelectorAll(".scroller");
-    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-      addAnimation();
-    }
-    function addAnimation(){
-      scrollers.forEach(scroller => {
-        scroller.setAttribute('data-animated', true);
-
-        const scrollerInner = scroller.querySelector(".scroller__inner");
-        const scrollerContent = Array.from(scrollerInner.children);
-
-        scrollerContent.forEach(item => {
-          const duplicatedItem = item.cloneNode(true);
-          duplicatedItem.setAttribute('aria-hidden', true);
-          scrollerInner.appendChild(duplicatedItem);
-        })
-      })
-    }
-  </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script> -->
-    <!-- <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script> -->
-    <!-- <script>
-      var owl = $('.filter-content').owlCarousel({
-          loop:false,
-          margin:0,
-          nav:true,
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:3
-              },
-              1000:{
-                  items:6
-              }
-          }
-      })
-
-      $( '.filter-control' ).on( 'click', '.filter-item', function(e) {
-
-        document.querySelector(".filter-control a.active").classList.remove('active');
-        e.target.className = "filter-item active";
-
-        var $item = $(this);
-        var filter = $item.data( 'owl-filter' )
-
-        owl.owlcarousel2_filter( filter );
-
-        } )
-    </script> -->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 
 @layer layout{
     /* Header */
-    .smrt-header .header-wrapper {display: flex;align-items: center;justify-content: space-between;gap: 1rem;}
+    .smrt-header .header-wrapper {display: flex;align-items: center;justify-content: space-between;gap: 1rem;flex-wrap: wrap}
     .smrt-header .logo img{max-width: 150px;}
     .smrt-header .header-nav > ul {display: flex;align-items: center;gap: 40px;}
     .smrt-header .header-nav li a {display: flex; align-items: center; gap: 0.5rem; color: var(--clr-white);font-size: 16px;line-height: 1.6;font-weight: 400;}
@@ -37,6 +37,17 @@
     .nav-ddl .nav-submenu li a {justify-content: center;color: var(--clr-dark);}
     /* Mobile */
     .header-nav{display:none;}
+    .header-nav.show{
+        display:block;
+        flex-basis: 100%;
+        flex-grow: 1;
+        background-color: rgb(11 23 77 / 20%);
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+    .header-nav.show ul{
+        flex-direction: column;gap: 15px;
+    }
     @media screen and (min-width:768px){
         .nav-mobile {display: none;}
         .header-nav{display: block;}
@@ -77,8 +88,8 @@
 
 
     .smrt-main-container{
-        background: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
-        url('../media/images/single-mobile-bg.svg');
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/images/single-mobile-bg.webp');
          background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -91,17 +102,31 @@
         color: var(--clr-white)!important;
     }
     .smrt-main-container .smrt-main-img{
+        max-width: 461px;
+        max-height: 478px;
+        width: 100%;
+        height: 100%;
+    }
+    .smrt-main-container .smrt-main-img{
         margin-bottom: -63px;
+    }
+    .smrt-about-web .smrt-main-container .smrt-main-img{
+        margin-bottom: -44px;
     }
     @media (min-width:767px) {
         .smrt-main-container .smrt-main-img{
         margin-top: 50px;
         }
     }
+    .smrt-about-web  .smrt-main-container ,
     .smrt-about-mobile .smrt-main-container {
         min-height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .smrt-about-web .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/images/single-web-bg.webp');
     }
 }

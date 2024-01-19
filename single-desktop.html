@@ -29,16 +29,16 @@
             <div class="logo">
               <img src="./assets/media/images/logo-white.svg" alt="Smartware Logo" width="150">
             </div>
-            <a class="nav-mobile">
+            <a class="nav-mobile" data-bs-toggle="collapse" data-bs-target="#smartHeader" aria-expanded="false">
               <img src="./assets/media/icons/bars.svg" alt="Menu Icon">
             </a>
-            <nav class="header-nav">
+            <nav class="header-nav collapse" id="smartHeader">
               <ul>
                 <li>
-                  <a href="/index.html">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
-                <li class="active">
-                  <a href="/single-mobile.html">About</a>
+                <li>
+                  <a href="single-mobile.html">About</a>
                 </li>
                 <li class="nav-ddl">
                   <a>
@@ -56,8 +56,8 @@
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="/single-desktop.html">Work</a>
+                <li class="active">
+                  <a href="single-desktop.html">Work</a>
                 </li>
                 <li>
                   <a href="/">Contact</a>
@@ -88,7 +88,7 @@
       </header>
     </div>
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 col-12 align-items-center justify-content-center d-flex">
               <h2 class="smrt-main-title my-30">
@@ -99,7 +99,7 @@
 
             </div>
             <div class="col-md-6 col-12">
-              <img src="./assets/media/images/single-web-img.svg" alt="Smartware mobile" class="smrt-main-img">
+              <img src="./assets/media/images/single-web-img.webp" alt="Smartware mobile" class="smrt-main-img">
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@
   <!--   Download application -->
   <section id="smrt-download-app">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center min-height-280">
         <div class="col-md-6 col-12 align-items-center justify-content-center d-flex">
           <div class="smrt-download-app">
             <h4 class="smrt-main-title">Download application now</h4>
@@ -255,14 +255,14 @@
           </div>
         </div>
         <div class="col-md-6 col-12">
-          <img src="./assets/media/images/single-web-app-img.svg" class="smrt-main-img" alt="Smartware Download mobile application">
+          <img src="./assets/media/images/single-web-app-img.webp" class="smrt-main-img" alt="Smartware Download mobile application">
         </div>
       </div>
     </div>
   </section>
   <!--   Download application -->
   <section id="smrt-application-screens">
-    <div class="container">
+    <div class="container mb-30">
       <div class="smrt-text-wrapper">
         <p class="smrt-feature">WEBSITE PAGES</p>
         <h2 class="smrt-main-title">
@@ -271,13 +271,24 @@
 
       </div>
     </div>
-    <div class="screens-carousel-container">
-      <div class="screens-carousel1">
-        <div class="screens-carousel">
-      <div><img src="assets/media/images/web-screen-1.svg"></div>
-      <div><img src="assets/media/images/web-screen-2.svg"></div>
-      <div><img src="assets/media/images/web-screen-3.svg"></div>
-        </div></div>
+    <div class="scroller mb-100" data-speed='slow'>
+      <ul class="mobile-list scroller__inner mb-76">
+        <li>
+          <div class="list-item">
+            <img src="./assets/media/images/web-screen-1.webp" alt="Smart web screens">
+          </div>
+        </li>
+        <li>
+          <div class="list-item">
+            <img src="./assets/media/images/web-screen-2.webp" alt="Smart web screens">
+          </div>
+        </li>
+        <li>
+          <div class="list-item">
+            <img src="./assets/media/images/web-screen-3.webp" alt="Smart web screens">
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
@@ -332,30 +343,8 @@
 
 <!-- scripts -->
 <script src="./assets/vendors/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="./assets/vendors/mixitup.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $(".screens-carousel").owlCarousel(
-            {
-              loop:false,
-              margin:10,
-              nav:true,
-              responsive:{
-                0:{
-                  items:1
-                },
-                600:{
-                  items:3
-                },
-                1000:{
-                  items:5
-                }
-              }
-            }
-    );
-  });
-</script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>

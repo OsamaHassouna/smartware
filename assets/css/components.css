@@ -339,7 +339,13 @@
 }
   
 @media (prefers-reduced-motion: reduce) {.tab-link {transition: none;}}
-  
+    @media screen and (max-width:768px){
+        .tablist .tablist-tabs{
+            --tablist-tabs-padding-block:0;
+            --tablist-tabs-gap: 25px;
+
+        }
+    }
 /* Tab Content */
 .tablist-content{margin: var(--tablist-tabcontent-margin);}
 .tablist-content > .tab-pane {display: none;}

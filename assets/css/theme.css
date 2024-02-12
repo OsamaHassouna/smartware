@@ -239,7 +239,11 @@
     font-size: clamp(23.81vw, 1vw, 400px);
     inset-inline-start: 0px;
 }
-.filter-control{display: flex; align-items: center; gap: 40px; margin-bottom: 32px;}
+.filter-control{display: flex; align-items: center; gap: 40px; margin-bottom: 32px;flex-wrap: wrap}
+@media (max-width: 767px) {
+    .filter-control{gap: 10px 20px;}
+}
+
 .filter-control .filter-item{
     position: relative;
     font-size: 20px;

@@ -87,6 +87,10 @@
     }
     @media screen and (max-width:499.98px) {
         .smrt-footer .footer-wrapper > * { flex: 100%; text-align: center; justify-content: center;}
+        .smrt-footer .footer-wrapper > .logo {
+            max-width: fit-content;
+            margin: 0 auto;
+        }
     }
     .smrt-footer p{
         color: var(--footer-clr);

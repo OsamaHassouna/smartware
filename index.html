@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <main class="smrt-home">
+    <main id="smrt-home" class="smrt-home">
       <section class="home-hero">
         <!-- Header -->
         <header class="smrt-header">
           <div class="container">
             <div class="header-wrapper">
               <div class="logo">
-                  <img src="./assets/media/images/logo.svg" alt="Smartware Logo" width="150">
+                  <img src="./assets/media/images/logo.png" alt="Smartware Logo" width="150">
               </div>
               <a class="nav-mobile" data-bs-toggle="collapse" data-bs-target="#smartHeader" aria-expanded="false">
                 <img src="./assets/media/icons/bars.svg" alt="Menu Icon">
@@ -38,7 +38,7 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li>
-                    <a href="">About Us</a>
+                    <a href="#home-about">About Us</a>
                   </li>
 <!--                  <li class="nav-ddl">-->
 <!--                    <a>-->
@@ -57,13 +57,13 @@
 <!--                    </ul>-->
 <!--                  </li>-->
                   <li>
-                    <a href="single-desktop.html">Our Services</a>
+                    <a href="#home-services">Our Services</a>
                   </li>
                   <li>
-                    <a href="single-desktop.html">Our Work</a>
+                    <a href="#home-products">Our Work</a>
                   </li>
                   <li>
-                    <a href="/">Contact Us</a>
+                    <a href="#home-contact">Contact Us</a>
                   </li>
 <!--                  <li class="nav-ddl">-->
 <!--                    <a>-->
@@ -103,7 +103,7 @@
         </div>
       </section>
   
-      <section class="home-about">
+      <section id="home-about" class="home-about">
         <div class="bg-title">About us</div>
         <div class="container">
           <div class="row">
@@ -191,7 +191,7 @@
         </div>
       </section>
 
-      <section class="home-services">
+      <section id="home-services" class="home-services">
         <div class="container">
           <div class="row">
             <div class="col-md-6 mb-58">
@@ -357,7 +357,7 @@
         </div>
       </section>
 
-      <section class="home-products">
+      <section id="home-products" class="home-products">
         <div class="bg-title">ing Work</div>
         <div class="container">
           <div class="row">
@@ -442,7 +442,7 @@
         </div>
       </section>
 
-      <section class="home-contact">
+      <section id="home-contact" class="home-contact">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
@@ -727,7 +727,10 @@
 
     <footer class="smrt-footer">
       <div class="container footer-wrapper">
-        <p>All rights reserved for Smartware</p>
+        <a class="logo" href="#smrt-home">
+          <img src="./assets/media/images/logo-white.png" alt="Smartware Logo" width="150">
+        </a>
+        <p>All rights reserved for <a href="#smrt-home">Smartware</a></p>
         <ul class="smrt-social">
           <li>
             <a href="">
@@ -751,7 +754,7 @@
 <!--            </a>-->
 <!--          </li>-->
           <li>
-            <a href="">
+            <a>
               <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.02496 14.9993H0.914956V4.98926H4.02496V14.9993ZM2.46696 3.61826C2.10889 3.62024 1.75829 3.51597 1.4595 3.31864C1.16071 3.12131 0.927167 2.8398 0.788408 2.50971C0.649648 2.17962 0.611911 1.81579 0.679971 1.46425C0.748031 1.11271 0.91883 0.78926 1.17076 0.534812C1.42269 0.280363 1.74443 0.106355 2.09527 0.0348003C2.44612 -0.0367541 2.8103 -0.00263913 3.14175 0.132829C3.47321 0.268298 3.75703 0.499032 3.95732 0.795842C4.15761 1.09265 4.26537 1.4422 4.26696 1.80026C4.2675 2.27948 4.07861 2.73949 3.74144 3.08004C3.40427 3.42058 2.94616 3.61404 2.46696 3.61826ZM15.667 14.9993H12.567V10.1243C12.567 8.96227 12.544 7.47226 10.95 7.47226C9.33296 7.47226 9.08496 8.73426 9.08496 10.0403V14.9993H5.97296V4.98926H8.95496V6.35026H8.99896C9.29722 5.83983 9.72836 5.41987 10.2465 5.13512C10.7645 4.85036 11.3502 4.71148 11.941 4.73326C15.089 4.73326 15.667 6.80626 15.667 9.49826V14.9983V14.9993Z" fill="currentColor"/>
               </svg>

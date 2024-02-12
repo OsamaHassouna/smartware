@@ -1,3 +1,10 @@
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 30) {
+        $(".smrt-header").addClass("fixed-header");
+    } else {
+        $(".smrt-header").removeClass("fixed-header");
+    }
+});
 const scrollers = document.querySelectorAll(".scroller");
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     addAnimation();

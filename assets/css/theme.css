@@ -226,7 +226,7 @@
 .home-services .service-card {display: grid;
     /*align-content: center;*/
     justify-items: start; gap: 16px; padding: 40px 10px;}
-@media screen and (max-width:499.98px) {.home-services .service-card{ gap: 10px; padding: 25px 10px;}
+@media screen and (max-width:499.98px) {.home-services .service-card{ gap: 10px; padding: 25px 10px;}}
 .home-services .service-card h4 {font-size: 25px;font-weight: 700;line-height: 1.2;color: white;}
 .home-services .service-card p {font-size: 16px;font-weight: 400;line-height: 1.6;color: white;}
 

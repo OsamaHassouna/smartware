@@ -226,6 +226,7 @@
 .home-services .service-card {display: grid;
     /*align-content: center;*/
     justify-items: start; gap: 16px; padding: 40px 10px;}
+@media screen and (max-width:499.98px) {.home-services .service-card{ gap: 10px; padding: 25px 10px;}
 .home-services .service-card h4 {font-size: 25px;font-weight: 700;line-height: 1.2;color: white;}
 .home-services .service-card p {font-size: 16px;font-weight: 400;line-height: 1.6;color: white;}
 
@@ -234,6 +235,7 @@
 }
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 .home-products{padding: 154px 0 144px; position: relative;}
+@media screen and (max-width:499.98px) {.home-products,.home-about{padding:40px 0;}}
 .home-products .bg-title{
     top: 85px;
     font-size: clamp(23.81vw, 1vw, 400px);
@@ -362,14 +364,28 @@
     flex-wrap: wrap;
 }
 /* .smrt-about-mobile .mobile-list .list-item, */
-.home-clients .clients-list .list-item {
-    padding: 40px 24px;
+.home-clients .clients-list li {
     background: var(--clr-lighter-gray);
-    border-radius: 24px;
-    min-width: 294px;
+    border-radius: 14px;
+    padding: 15px;
 }
-.smrt-about-mobile .mobile-list .list-item > img,
+.home-clients .clients-list .list-item {
+    padding: 5px 10px;
+    background: var(--clr-white);
+    border-radius: 12px;
+    min-width: 254px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .home-clients .clients-list .list-item > img {
+    margin-inline: auto;
+    height: 85%;
+    width: auto;
+    object-fit: cover;
+}
+.smrt-about-mobile .mobile-list .list-item > img {
     margin-inline: auto;
     height: 48px;
     width: auto;

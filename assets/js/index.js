@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 30) {
+    if ($(window).scrollTop() >= 200) {
         $(".smrt-header").addClass("fixed-header");
     } else {
         $(".smrt-header").removeClass("fixed-header");

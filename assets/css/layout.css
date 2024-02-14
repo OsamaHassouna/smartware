@@ -79,7 +79,7 @@
     /* Footer */
     .smrt-footer{background: var(--footer-bg-clr);}
     .smrt-footer .footer-wrapper{
-        padding: 27px 10px;
+        padding: 5px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;

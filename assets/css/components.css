@@ -559,6 +559,12 @@ p.smrt-feature{
     margin: 8px 0;
     height: calc(100% - 16px);
 }
+.card.smrt-card .feature-no{
+    color: #0b174d1a;
+    font-size: 80px;
+    line-height: 0;
+    margin-bottom: -9px;
+}
 .card.smrt-card.feature-card .card-title{
     color:var(--clr-dark);
     font-size: var(--fs-sm);

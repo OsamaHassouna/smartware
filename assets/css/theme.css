@@ -284,6 +284,8 @@
     position: relative;
     margin-bottom: var(--bs-gutter-x);
     /* min-height: 100%; */
+    align-items: flex-start;
+    overflow: hidden;
 }
 .filter-content .filter-item > img {
     object-fit: cover;
@@ -470,7 +472,7 @@
 .smrt-about-mobile .smrt-header .header-nav > li > a{color: white;}
 /* ABOUT PROJECT */
 #smrt-about-project{
-    padding-top:220px ;
+    padding-top:120px ;
     padding-bottom: 176px;
 }
 #smrt-about-project p.smrt-main-subtitle ,
@@ -478,7 +480,14 @@
     max-width:755px;
     margin-top: 16px;
 }
+#smrt-about-project a{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+#smrt-about-project a img{
+    width: 100%;
 
+}
 /* ABOUT US */
 #smrt-about-us .smrt-cards-container{
     padding-top: 22px;

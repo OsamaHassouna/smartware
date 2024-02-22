@@ -558,6 +558,7 @@ p.smrt-feature{
     --card-border-clr: var(--clr-border);
     margin: 8px 0;
     height: calc(100% - 16px);
+    padding-top: 71px;
 }
 .card.smrt-card .feature-no{
     color: #0b174d1a;

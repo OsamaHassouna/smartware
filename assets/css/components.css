@@ -531,6 +531,12 @@ h4.smrt-main-title{
     color: var(--clr-white);
     line-height: var(--lh-12);
 }
+h4.smrt-main-title.smrt-feature{
+    font-size:var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    line-height: var(--lh-12);
+}
 p.smrt-main-subtitle{
     color: var(--clr-primary);
     font-size: var(--body-fs);
@@ -565,6 +571,7 @@ p.smrt-feature{
     font-size: 80px;
     line-height: 0;
     margin-bottom: -9px;
+    font-weight: bold;
 }
 .card.smrt-card.feature-card .card-title{
     color:var(--clr-dark);

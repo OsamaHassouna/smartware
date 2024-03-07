@@ -161,6 +161,9 @@
     .smrt-about-web .smrt-main-container .smrt-main-img{
         margin-bottom: -44px;
     }
+    .smrt-about-web.bms .smrt-main-container .smrt-main-img{
+        margin-bottom: -4px;
+    }
     .smrt-about-mobile .smrt-main-container .smrt-main-img{margin-bottom: 0;}
     @media (min-width:767px) {
         .smrt-main-container .smrt-main-img{
@@ -179,4 +182,5 @@
         background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
         url('../media/images/single-web-bg.webp');
     }
+
 }

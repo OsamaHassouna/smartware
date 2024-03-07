@@ -6,7 +6,7 @@
 .fs-xs{font-size:clamp(var(--fs-xs-min), var(--fs-ratio), var(--fs-xs-max))}
 .fs-sm{font-size:clamp(var(--fs-sm-min), var(--fs-ratio), var(--fs-sm-max))}
 .fs-md{font-size:clamp(var(--fs-md-min), var(--fs-ratio), var(--fs-md-max))}
-.fs-lg{font-size:clamp(var(--fs-lg-min), var(--fs-ratio), var(--fs-lg-max))}
+.fs-lg{font-size:var(--fs-lg)}
 .fs-xl{font-size:clamp(var(--fs-xl-min), var(--fs-ratio), var(--fs-xl-max))}
 /* Font Weight */
 .fw-lighter{font-weight:100}.fw-light{font-weight:300}.fw-normal{font-weight:400}.fw-medium{font-weight:500}.fw-semibold{font-weight:600}.fw-bold{font-weight:700}.fw-extrabold{font-weight:800}.fw-heavy{font-weight:900}

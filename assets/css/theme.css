@@ -282,7 +282,7 @@
     display: flex;
     width: 100%;
     position: relative;
-    margin-bottom: var(--bs-gutter-x);
+    margin-bottom: 30px;
     min-height: 100%;
     align-items: flex-end;
     overflow: hidden;
@@ -348,7 +348,7 @@
 .contact-content { color: white; opacity: 0.8; margin-bottom: 45px;}
 /* =-=-=-=-=-=-= =-=-=-=-=-=-= =-=-=-=-=-=-= */
 /* CLIENTS */
-.home-clients{padding: 140px 30px; position: relative; overflow: hidden;}
+.home-clients{padding: 140px 30px 30px 30px; position: relative; overflow: hidden;}
 .home-clients .bg-title {
     top: 85px;
     font-size: clamp(23.81vw, 1vw, 400px);

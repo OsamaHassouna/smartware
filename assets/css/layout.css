@@ -177,10 +177,36 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 100px;
     }
-    .smrt-about-web .smrt-main-container{
+    .smrt-about-web.bms .smrt-main-container{
         background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
-        url('../media/images/single-web-bg.webp');
+        url('../media/projects/BMS/bg.png');
+    }
+
+    .smrt-about-web.epm .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/projects/EPM/bg.png');
+    }
+
+    .smrt-about-web.ess .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/projects/ESS/bg.png');
+    }
+
+    .smrt-about-web.rawafid .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/projects/Rawafid/bg.png');
+    }
+
+    .smrt-about-web.riyadah .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/projects/Riyadah/bg.png');
+    }
+
+    .smrt-about-web.spm .smrt-main-container{
+        background-image: linear-gradient(180deg, rgba(21, 38, 113, 0.90) 0%, rgba(3, 7, 22, 0.90) 100%),
+        url('../media/projects/SPM/bg.png');
     }
 
 }
